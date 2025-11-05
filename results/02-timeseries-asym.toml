@@ -1,0 +1,7 @@
+T_end = 1.0e6
+
+[params]
+N = 200
+D = 0.005
+kappa = 0.5
+beta = 0.0

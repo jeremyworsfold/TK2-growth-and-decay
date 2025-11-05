@@ -22,10 +22,10 @@ base_config = load(SimParams, SCRIPTNAME)
 configs = [@set base_config.params.beta = β for β in BETAS]
 fnames = ["$SCRIPTNAME-sym", "$SCRIPTNAME-asym"]
 
-f1 = fig_in_cm(9, 8.6)
+f1 = fig_in_cm(9, 8.6, backgroundcolor=:transparent)
 axs = [
-    Axis(f1[1, 1], ylabel=L"P^\ast(s)", xticklabelsvisible=false),
-    Axis(f1[2, 1], ylabel=L"P^\ast(s)", xlabel=L"s"),
+    Axis(f1[1, 1], ylabel=L"P^\ast(s)", xticklabelsvisible=false, backgroundcolor=:transparent),
+    Axis(f1[2, 1], ylabel=L"P^\ast(s)", xlabel=L"s", backgroundcolor=:transparent),
 ]
 linkxaxes!(axs...)
 rowgap!(f1.layout, Relative(0.02))
